@@ -28,9 +28,9 @@ div > h2 {
   height: 80px;
 }
 
-div:nth-child(2) {
+/* div:nth-child(2) {
   padding: calc(var(--imagery-spacing) * 2) 0 calc(var(--imagery-spacing) * 2) 0;
-}
+} */
 
 div > div > h3 {
   margin: calc(var(--text-spacing) * 0.4) 0 var(--text-spacing) 0;

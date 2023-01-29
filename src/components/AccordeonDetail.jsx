@@ -12,7 +12,7 @@ function AccordeonDetail({ themeName, quizTheme }) {
     const { value } = event.currentTarget;
     setQuiz(quizTheme);
     setDifficulte(value);
-    navigate("/Jeu");
+    navigate("/jeu");
   };
 
   return (

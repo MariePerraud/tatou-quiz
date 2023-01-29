@@ -21,7 +21,7 @@ export default function Game() {
   const navigate = useNavigate();
 
   function lastQuestion() {
-    navigate("/Score");
+    navigate("/score");
     confetti();
   }
 

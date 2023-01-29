@@ -31,10 +31,10 @@ function Header() {
             <Link to="/" onClick={handleClick}>
               Accueil
             </Link>
-            <Link to="/Themes" onClick={handleClick}>
+            <Link to="/themes" onClick={handleClick}>
               Thèmes
             </Link>
-            <Link to="/Regles" onClick={handleClick}>
+            <Link to="/regles" onClick={handleClick}>
               Règles
             </Link>
           </div>
@@ -79,7 +79,7 @@ function Header() {
               </h2>
             </Link>
             <Link
-              to="/Themes"
+              to="/themes"
               style={{
                 textDecoration: "none",
               }}
@@ -95,7 +95,7 @@ function Header() {
               </h2>
             </Link>
             <Link
-              to="/Regles"
+              to="/regles"
               style={{
                 textDecoration: "none",
               }}
