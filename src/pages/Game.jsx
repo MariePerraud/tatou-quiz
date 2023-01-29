@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useContext } from "react";
-import confetti from "https://cdn.skypack.dev/canvas-confetti";
+// import confetti from "https://cdn.skypack.dev/canvas-confetti";
 import { useNavigate } from "react-router-dom";
 import { stockData } from "../data";
 import ScoreContext from "../contexts/ScoreContext";
@@ -22,7 +22,7 @@ export default function Game() {
 
   function lastQuestion() {
     navigate("/score");
-    confetti();
+    // confetti();
   }
 
   const getQuestion = () => {
