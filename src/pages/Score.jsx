@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import pontTroncArbre from "../assets/pont_tronc_arbre.jpg";
-import "../styles/NotificationMessage.css";
 import ScoreContext from "../contexts/ScoreContext";
+import pontTroncArbre from "../assets/pont_tronc_arbre.jpg";
+import "../App.css";
+import "../styles/Score.css";
 
 function Score() {
   const { score, setScore } = useContext(ScoreContext);
@@ -16,16 +17,16 @@ function Score() {
         minHeight: "100vh",
       }}
     >
-      <h2 style={{ textAlign: "center" }}>
+      <h2 className="scoreResult">
         Score : <br /> {score} / 10
       </h2>
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <NavLink to="/" style={{ textDecoration: "none" }}>
+      <div className="scoreLiens">
+        <NavLink to="/">
           <h4 className="jouer" onClick={() => setScore(0)}>
             Accueil
           </h4>
         </NavLink>
-        <NavLink to="/Themes" style={{ textDecoration: "none" }}>
+        <NavLink to="/Themes">
           <h4 className="jouer" onClick={() => setScore(0)}>
             Thèmes
           </h4>

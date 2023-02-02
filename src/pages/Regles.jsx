@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import "../styles/Regles.css";
 import lac from "../assets/lac_ponton.jpg";
+import "../App.css";
+import "../styles/Regles.css";
 
 export default function Regles() {
   return (
@@ -22,7 +23,7 @@ export default function Regles() {
           <b>difficulté</b>, puis le <b>quiz</b> se lancera.
         </p>
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <div className="instructionsLiens">
         <Link to="/" className="jouer">
           <h4>Accueil</h4>
         </Link>

@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import ScoreContext from "../contexts/ScoreContext";
-import logo from "../assets/logo_toto.png";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo_toto2.png";
 import "../App.css";
 import "../styles/Header.css";
 
-function Header() {
+export default function Header() {
   const { setScore } = useContext(ScoreContext);
 
   function handleClick() {
@@ -23,7 +23,7 @@ function Header() {
       {/* version mobile */}
       <div className="mobile">
         <div className="topnav">
-          <h1 style={{ marginLeft: "1rem" }}>Tatou Quiz</h1>
+          <h1>Tatou Quiz</h1>
           <div className="menu" onClick={handleClick}>
             &equiv; Menu
           </div>
@@ -42,79 +42,27 @@ function Header() {
       </div>
 
       {/* version desktop */}
-      <div
-        className="desktop"
-        style={{
-          position: "fixed",
-          zIndex: 3,
-          width: "100%",
-        }}
-      >
+      <div className="desktop">
         <nav>
-          <div style={{ marginLeft: "1rem" }}>
-            <img
-              src={logo}
-              alt="logo"
-              style={{ width: "5rem", transform: "scaleX(-1)" }}
-            />
+          <div>
+            <img src={logo} alt="logo" />
           </div>
           <div>
             <h1>Tatou Quiz</h1>
           </div>
           <div className="liens">
-            <Link
-              to="/"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2
-                style={{
-                  color: "var(--beige)",
-                  marginRight: "1rem",
-                }}
-                onClick={() => setScore(0)}
-              >
-                Accueil
-              </h2>
+            <Link to="/" onClick={() => setScore(0)}>
+              Accueil
             </Link>
-            <Link
-              to="/themes"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2
-                style={{
-                  color: "var(--beige)",
-                  marginRight: "1rem",
-                }}
-                onClick={() => setScore(0)}
-              >
-                Thèmes
-              </h2>
+            <Link to="/themes" onClick={() => setScore(0)}>
+              Thèmes
             </Link>
-            <Link
-              to="/regles"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2
-                style={{
-                  color: "var(--beige)",
-                  marginRight: "1rem",
-                }}
-                onClick={() => setScore(0)}
-              >
-                Règles
-              </h2>
+            <Link to="/regles" onClick={() => setScore(0)}>
+              Règles
             </Link>
           </div>
         </nav>
       </div>
     </>
   );
-}
-
-export default Header;
+};

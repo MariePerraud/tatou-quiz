@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import QuizContext from "../contexts/QuizContext";
-import "../styles/Accordeon.css";
+import "../styles/Themes.css";
 
 function AccordeonDetail({ themeName, quizTheme }) {
   const { quiz, setQuiz, setDifficulte } = useContext(QuizContext);
@@ -17,7 +17,7 @@ function AccordeonDetail({ themeName, quizTheme }) {
 
   return (
     <section className="drop">
-      <button className="thematique" type="button">
+      <button type="button" className="thematique">
         {themeName}
       </button>
       <select name="quiz" defaultValue={quiz} onChange={handleChange}>

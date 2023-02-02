@@ -6,9 +6,9 @@ import { stockData } from "../data";
 import ScoreContext from "../contexts/ScoreContext";
 import QuizContext from "../contexts/QuizContext";
 import AnswerButton from "../components/AnswerButton";
-import "../styles/Game.css";
-import "../styles/countdown.css";
 import cascade from "../assets/cascade_eau.jpg";
+import "../App.css";
+import "../styles/Game.css";
 
 export default function Game() {
   const { score, setScore } = useContext(ScoreContext);

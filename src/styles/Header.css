@@ -19,6 +19,7 @@
   .topnav h1 {
     color: var(--beige);
     font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-left: 1rem;
   }
 
   .topnav #myLinks {
@@ -55,6 +56,12 @@
     display: none
   }
 
+  .desktop {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -68,6 +75,14 @@
     padding: 0;
   }
   
+  nav div {
+    margin-left: 1rem;
+  }
+
+  nav div img {
+    width: 5rem;
+  }
+
   nav h1 {
     color: var(--beige);
     text-align: center;
@@ -79,6 +94,16 @@
   }
 
   .liens{
-    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-size: 22px;
   }
+  
+  .liens a {
+    text-decoration: none;
+    color: var(--beige);
+    margin-right: 1rem;
+  }
+
 }
