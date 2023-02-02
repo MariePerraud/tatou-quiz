@@ -14,10 +14,10 @@ export default function Regles() {
       }}
     >
       <div className="instructions">
-        <h3>🎯 Principe</h3>
+        <h3>Règles</h3>
         <p>
-          L&apos;ensemble des questions du <b>Quizzzzz</b> sont disponibles en
-          appuyant sur le bouton <b>JOUER</b>. Choisissez parmi une des{" "}
+          L&apos;ensemble des questions de <b>Tatou Quiz</b> sont disponibles en
+          appuyant sur le bouton <b>Jouer</b>. Choisissez une des{" "}
           <b>thématiques</b> proposées, ainsi que son niveau de{" "}
           <b>difficulté</b>, puis le <b>quiz</b> se lancera.
         </p>
